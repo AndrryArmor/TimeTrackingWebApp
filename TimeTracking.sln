@@ -6,8 +6,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReportGenerator", "ReportGe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeTracking.Identity.BL", "src\Identity\TimeTracking.Identity.BL\TimeTracking.Identity.BL.csproj", "{72C09952-FB3A-412F-A30D-9C11B9551505}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeTracking.Identity.Dal", "src\Identity\TimeTracking.Identity.Dal\TimeTracking.Identity.Dal.csproj", "{917BCE2D-02AA-42AF-A9FB-829AEDA057E4}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeTracking.Bl.Abstract", "src\TimeTracking.Bl.Abstract\TimeTracking.Bl.Abstract.csproj", "{305D99F4-390A-45A0-B79A-CC7C11542CD1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeTracking.Bl.Impl", "src\TimeTracking.Bl.Impl\TimeTracking.Bl.Impl.csproj", "{2B689C3F-50AE-48C1-B924-7A401D1B5DD6}"
@@ -26,6 +24,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeTracking.Common", "src\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeTracking.Identity.WebApi", "src\Identity\TimeTracking.Identity.WebApi\TimeTracking.Identity.WebApi.csproj", "{9CC511B9-29DD-48C1-A9C4-832AFFDE8D31}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeTracking.Identity.Models", "src\Identity\TimeTracking.Identity.Models\TimeTracking.Identity.Models.csproj", "{A7C1604D-C606-41AC-9D88-1C80BE0ED91F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeTracking.Identity.Entities", "src\Identity\TimeTracking.Identity.Entities\TimeTracking.Identity.Entities.csproj", "{0FD1C76A-5BB5-4B21-926A-0EDD07283480}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeTracking.Identity.Dal.Abstract", "src\Identity\TimeTracking.Identity.Dal.Abstract\TimeTracking.Identity.Dal.Abstract.csproj", "{DC0E8214-D4DE-4D4E-AAE0-92D3FF729C38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeTracking.Identity.Dal.Impl", "src\Identity\TimeTracking.Identity.Dal.Impl\TimeTracking.Identity.Dal.Impl.csproj", "{2580E68D-807A-4CCA-BFCE-F7130DAA7917}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,10 +42,6 @@ Global
 		{72C09952-FB3A-412F-A30D-9C11B9551505}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72C09952-FB3A-412F-A30D-9C11B9551505}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72C09952-FB3A-412F-A30D-9C11B9551505}.Release|Any CPU.Build.0 = Release|Any CPU
-		{917BCE2D-02AA-42AF-A9FB-829AEDA057E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{917BCE2D-02AA-42AF-A9FB-829AEDA057E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{917BCE2D-02AA-42AF-A9FB-829AEDA057E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{917BCE2D-02AA-42AF-A9FB-829AEDA057E4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{305D99F4-390A-45A0-B79A-CC7C11542CD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{305D99F4-390A-45A0-B79A-CC7C11542CD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{305D99F4-390A-45A0-B79A-CC7C11542CD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -76,10 +78,29 @@ Global
 		{9CC511B9-29DD-48C1-A9C4-832AFFDE8D31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CC511B9-29DD-48C1-A9C4-832AFFDE8D31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CC511B9-29DD-48C1-A9C4-832AFFDE8D31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7C1604D-C606-41AC-9D88-1C80BE0ED91F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7C1604D-C606-41AC-9D88-1C80BE0ED91F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7C1604D-C606-41AC-9D88-1C80BE0ED91F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7C1604D-C606-41AC-9D88-1C80BE0ED91F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FD1C76A-5BB5-4B21-926A-0EDD07283480}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FD1C76A-5BB5-4B21-926A-0EDD07283480}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FD1C76A-5BB5-4B21-926A-0EDD07283480}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FD1C76A-5BB5-4B21-926A-0EDD07283480}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC0E8214-D4DE-4D4E-AAE0-92D3FF729C38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC0E8214-D4DE-4D4E-AAE0-92D3FF729C38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC0E8214-D4DE-4D4E-AAE0-92D3FF729C38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC0E8214-D4DE-4D4E-AAE0-92D3FF729C38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2580E68D-807A-4CCA-BFCE-F7130DAA7917}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2580E68D-807A-4CCA-BFCE-F7130DAA7917}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2580E68D-807A-4CCA-BFCE-F7130DAA7917}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2580E68D-807A-4CCA-BFCE-F7130DAA7917}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{72C09952-FB3A-412F-A30D-9C11B9551505} = {3B2AA40A-DAF5-47B9-9DEA-097785F69791}
-		{917BCE2D-02AA-42AF-A9FB-829AEDA057E4} = {3B2AA40A-DAF5-47B9-9DEA-097785F69791}
 		{9CC511B9-29DD-48C1-A9C4-832AFFDE8D31} = {3B2AA40A-DAF5-47B9-9DEA-097785F69791}
+		{A7C1604D-C606-41AC-9D88-1C80BE0ED91F} = {3B2AA40A-DAF5-47B9-9DEA-097785F69791}
+		{0FD1C76A-5BB5-4B21-926A-0EDD07283480} = {3B2AA40A-DAF5-47B9-9DEA-097785F69791}
+		{DC0E8214-D4DE-4D4E-AAE0-92D3FF729C38} = {3B2AA40A-DAF5-47B9-9DEA-097785F69791}
+		{2580E68D-807A-4CCA-BFCE-F7130DAA7917} = {3B2AA40A-DAF5-47B9-9DEA-097785F69791}
 	EndGlobalSection
 EndGlobal
